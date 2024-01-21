@@ -20,7 +20,7 @@ template_id = os.environ["TEMPLATE_ID"]
 
 
 def get_weather():
-  url = "https://restapi.amap.com/v3/weather/weatherInfo?key=a023072ff215aced32ffe3c9e3ee77fb8&city=110000&extensions=all"
+  url = "https://restapi.amap.com/v3/weather/weatherInfo?city=420111&key=b1bdb374eec7810324c7b6119cccddb9"
   res = requests.get(url).json()
   weather = res['lives']['0']
   return weather['weather'], math.floor(weather['temperature'])
