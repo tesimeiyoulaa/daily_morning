@@ -10,9 +10,10 @@ today = datetime.now()
 start_date = os.environ['START_DATE']
 city = os.environ['CITY']
 birthday = os.environ['BIRTHDAY']
-
+print(birthday)
 app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
+print(app_id)
 
 user_id = os.environ["USER_ID"]
 template_id = os.environ["TEMPLATE_ID"]
